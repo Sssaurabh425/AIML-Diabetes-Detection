@@ -11,4 +11,4 @@ RUN pip3 install -r requirements.txt
 
 
 # Run
-CMD streamlit run app.py --workers=4 --bind 0.0.0.0:$PORT
+CMD streamlit run 0.0.0.0:$PORT app.py
