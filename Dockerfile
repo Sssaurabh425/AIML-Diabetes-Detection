@@ -4,12 +4,12 @@ FROM python:3.9
 EXPOSE 8080
 
 # Upgrade pip and install requirements
-COPY requirements.txt requirements.txt
+COPY . /app
 RUN pip install -U pip
 RUN pip install -r requirements.txt
 
 # Copy app code and set working directory
-COPY . .
+
 WORKDIR /app
 
 # Run
